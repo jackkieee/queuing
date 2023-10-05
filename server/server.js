@@ -25,6 +25,5 @@ server.listen(port, (err) => {
     console.log(`Server listening on port ${ port }…`);
 });
 
-// IO = esta es la comunicacion del backend
 module.exports.io = socketIO(server);
 require('./sockets/socket');
