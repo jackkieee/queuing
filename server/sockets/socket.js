@@ -10,7 +10,6 @@ io.on('connection', (client) => {
         console.log('User disconnected');
     });
 
-    // Escuchar el cliente
     client.on('ticket.generate', (data, callback) => {
         let number = ticketcontrol.next();
 
